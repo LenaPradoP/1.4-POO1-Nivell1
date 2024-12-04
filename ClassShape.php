@@ -6,7 +6,7 @@ class Shape {
     protected $length;
     protected $height;
 
-    public function __construct(int $length, int $height) {
+    public function __construct(float $length, float $height) {
         $this->length = $length;
         $this->height = $height;
     }

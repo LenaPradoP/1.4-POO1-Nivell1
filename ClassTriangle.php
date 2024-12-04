@@ -4,7 +4,7 @@ require_once("ClassShape.php");
 
 class Triangle extends Shape {
 
-    public function calculateArea() {
+    public function calculateArea() : float {
 
         return ($this->length * $this->height) / 2;
     }

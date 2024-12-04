@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 
 class Employee {
 
@@ -10,15 +11,18 @@ private $sueldo = 0;
         $this->sueldo = $sueldo;
     }
 
-    public function print() {
-        echo "Nombre: $this->nombre<br>";
+    public function print() : string {
+        $respuesta = "Nombre: $this->nombre<br>";
         
         if ($this->sueldo > 6000) {
-            echo "Paga impuestos.<br>";
+            $respuesta .= "Paga impuestos.<br>";
         } else {
-            echo "No paga impuestos.<br>";
+            $respuesta .= "No paga impuestos.<br>";
         }
+        return $respuesta;
     }
+
+
 }
 
 ?>

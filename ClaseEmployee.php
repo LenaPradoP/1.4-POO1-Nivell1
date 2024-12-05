@@ -12,12 +12,12 @@ private $sueldo = 0;
     }
 
     public function print() : string {
-        $respuesta = "Nombre: $this->nombre<br>";
+        $respuesta = "Nombre: " . $this->nombre .PHP_EOL;
         
         if ($this->sueldo > 6000) {
-            $respuesta .= "Paga impuestos.<br>";
+            $respuesta .= "Paga impuestos." .PHP_EOL;
         } else {
-            $respuesta .= "No paga impuestos.<br>";
+            $respuesta .= "No paga impuestos." .PHP_EOL;
         }
         return $respuesta;
     }

@@ -2,7 +2,7 @@
 
 require("ClaseEmployee.php");
 
-echo "Ejercicio 1.4.1" .PHP_EOL;
+echo "Ejercicio 1.4.1".PHP_EOL;
 
 $empleado1 = new Employee;
 $empleado1->initialize('Laura', 8000);

@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 class Employee {
 
-private $nombre = '';
-private $sueldo = 0;
+private $nombre;
+private $sueldo;
 
-    public function initialize($nombre, $sueldo) {
+    public function initialize(String $nombre, int $sueldo) {
         $this->nombre = $nombre;
         $this->sueldo = $sueldo;
     }
@@ -21,6 +21,8 @@ private $sueldo = 0;
         }
         return $respuesta;
     }
+
+    
 
 
 }
